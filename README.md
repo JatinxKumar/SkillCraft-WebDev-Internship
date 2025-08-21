@@ -12,7 +12,7 @@ Each project is built using **HTML, CSS, JavaScript**, and deployed for live pre
 - Hover & scroll effects  
 - Interactive UI  
 
-🔗 **Live Preview:** https://task01-landingpage-jatin.vercel.app/(#) 
+🔗 **Live Preview:** https://task01-landingpage-jatin.vercel.app/ 
 
 💻 **Source Code:** [Task01/](./Task01)  
 
@@ -23,7 +23,7 @@ Each project is built using **HTML, CSS, JavaScript**, and deployed for live pre
 - Lap time tracking  
 - Clean & user-friendly design  
 
-🔗 **Live Preview:** https://task02-stopwatch-jatin.vercel.app/(#)
+🔗 **Live Preview:** https://task02-stopwatch-jatin.vercel.app/
 
 💻 **Source Code:** [Task02/](./Task02)  
 
@@ -34,7 +34,7 @@ Each project is built using **HTML, CSS, JavaScript**, and deployed for live pre
 - Winning line animations & transitions  
 - Premium UI with smooth effects  
 
-🔗 **Live Preview:** https://task03-tictactoe-jatin.vercel.app/(#)  
+🔗 **Live Preview:** https://task03-tictactoe-jatin.vercel.app/ 
 
 💻 **Source Code:** [Task03/](./Task03)  
 
