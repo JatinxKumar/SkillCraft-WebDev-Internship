@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+  <div class="container">
+    <h1>Stopwatch</h1>
+    <div class="stopwatch" id="display">00:00:000</div>
+
+    <div class="buttons">
+      <button id="startPauseBtn">Start</button>
+      <button id="lapBtn" disabled>Lap</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div class="laps">
+      <ul id="lapList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

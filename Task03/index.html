@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">GameHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Play</a>
+                <a href="#" class="nav-link">Leaderboard</a>
+                <a href="#" class="nav-link">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div class="game-header">
+            <h1 class="game-title">Strategic Tic-Tac-Toe</h1>
+            <p class="game-subtitle">Master the art of strategy</p>
+        </div>
+
+        <div class="game-dashboard">
+            <div class="score-panel glass-card">
+                <div class="score-item">
+                    <div class="player-icon player-x">X</div>
+                    <div class="score-info">
+                        <span class="score-label">Player 1</span>
+                        <span class="score-value" id="score-x">0</span>
+                    </div>
+                </div>
+                <div class="score-divider"></div>
+                <div class="score-item">
+                    <div class="player-icon player-o">O</div>
+                    <div class="score-info">
+                        <span class="score-label">Player 2</span>
+                        <span class="score-value" id="score-o">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-board-container glass-card">
+                <div class="game-status">
+                    <span id="current-player">Player X's Turn</span>
+                </div>
+                
+                <div class="game-board">
+                    <button class="cell" data-index="0"></button>
+                    <button class="cell" data-index="1"></button>
+                    <button class="cell" data-index="2"></button>
+                    <button class="cell" data-index="3"></button>
+                    <button class="cell" data-index="4"></button>
+                    <button class="cell" data-index="5"></button>
+                    <button class="cell" data-index="6"></button>
+                    <button class="cell" data-index="7"></button>
+                    <button class="cell" data-index="8"></button>
+                </div>
+
+                <div class="game-controls">
+                    <button class="control-btn secondary" id="reset-btn">
+                        <span class="btn-icon">↻</span>
+                        Reset Round
+                    </button>
+                    <button class="control-btn primary" id="new-game-btn">
+                        <span class="btn-icon">+</span>
+                        New Game
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-stats glass-card">
+                <h3 class="stats-title">Game Stats</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Rounds</span>
+                        <span class="stat-value" id="total-rounds">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Draws</span>
+                        <span class="stat-value" id="total-draws">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="winner-modal" id="winner-modal">
+        <div class="modal-content glass-card">
+            <div class="winner-icon">🏆</div>
+            <h2 class="winner-title" id="winner-title">Congratulations!</h2>
+            <p class="winner-message" id="winner-message">Player X wins this round!</p>
+            <div class="modal-actions">
+                <button class="control-btn secondary" id="continue-btn">Continue</button>
+                <button class="control-btn primary" id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
